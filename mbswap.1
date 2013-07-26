@@ -1,0 +1,20 @@
+.\" Manpage for mbswap (switchMainDisplay).
+.\" Created by Ryan Mastrolia.
+.TH man 1 "1.0" "mbswap  man page"
+.SH NAME
+mbswap \- swap the display containing the menu bar (main display)
+.SH SYNOPSIS
+mbswap [-vc]
+.SH DESCRIPTION
+mbswap a small utility designed to simply swap the menu bar between displays on OSX. This effectively swaps the main display.
+mbswap with no options expects exactly two displays to be active. See OPTIONS for further usage.
+.SH OPTIONS
+mbswap is designed to be fast and compact, called without options. However two options are available for convenience:
+.IP -v
+Verbose mode.
+.IP -c
+Cyclic mode. Cyclic modes will work with 2+ displays. For two displays cyclic mode behaves the same as regular mode. With more displays connected, mbswap will simply cycle through the active monitors, pushing the menu bar to the next available display after the currently set one.
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Ryan Mastrolia
